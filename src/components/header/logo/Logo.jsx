@@ -12,7 +12,7 @@ const Logo = ({ isLoggedIn }) => {
 
         <p>ExpenseTracker</p>
       </Link>
-    </StyledLogo>dddddddd
+    </StyledLogo>
   );
 };
 
