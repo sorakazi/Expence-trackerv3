@@ -1,4 +1,5 @@
 import React from "react";
+import { Routes, Route } from "react-router-dom";
 import Logo from "./components/header/logo/Logo"; // Update the path as necessary
 import WelcomePage from "pages/WelcomePage/WelcomePage";
 
@@ -8,8 +9,17 @@ const App = () => {
 
   return (
     <div>
-      <Logo isLoggedIn={isLoggedIn} />
-      <WelcomePage />
+      <Routes>
+        <Route
+          path="/"
+          element={
+            <>
+              <Logo isLoggedIn={isLoggedIn} />
+              <WelcomePage />
+            </>
+          }
+        />
+      </Routes>
     </div>
   );
 };
