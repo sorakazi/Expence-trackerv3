@@ -1,13 +1,45 @@
+@import-normalize;
+@font-face {
+  font-family: "SuisseIntl";
+  src: local("SuisseIntlRegular"),
+    url("/public/fonts/suisse-regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "SuisseIntl";
+  src: local("SuisseIntlBold"),
+    url("/public/fonts/suisse-bold.ttf") format("truetype");
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+button {
+  cursor: pointer;
+}
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: Suisse Intl, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: var(--black-color);
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+.Toastify__toast--error {
+  background-color: transparent;
+  color: var(--white-color);
+  font-size: 20px;
+  padding: 20px;
+}
+
+.Toastify__toast--error .Toastify__progress-bar {
+  background: var(--error-color);
 }
