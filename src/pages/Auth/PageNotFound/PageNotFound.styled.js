@@ -1,5 +1,5 @@
-import styled from 'styled-components';
-import backgroundImage from '../../images/4044-page.png';
+import styled from "styled-components";
+import backgroundImage from "images/4044-page.png";
 
 export const StyledBox = styled.div`
   background-image: url(${backgroundImage});
@@ -15,7 +15,7 @@ export const StyledBox = styled.div`
 
 export const StyledTitle = styled.h1`
   color: #8cffa0;
-  font-family: 'Your Futuristic Font', sans-serif;
+  font-family: "Your Futuristic Font", sans-serif;
   text-transform: uppercase;
   margin-bottom: 1rem;
   font-size: 2.5rem;
@@ -40,7 +40,7 @@ export const StyledButton = styled.button`
   border: 1px solid #8cffa0;
   border-radius: 2rem;
   cursor: pointer;
-  font-family: 'Your Futuristic Font', sans-serif;
+  font-family: "Your Futuristic Font", sans-serif;
   text-transform: uppercase;
   box-shadow: 0 0 10px #8cffa0;
   transition: all 0.3s ease;

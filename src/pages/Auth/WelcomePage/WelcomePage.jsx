@@ -1,3 +1,4 @@
+import AuthNav from "../AuthNav/AuthNav";
 import { Text } from "./WelcomePage.styled";
 import { StyledCommonWrapper } from "styles/Common.styled";
 import BgImageWrapper from "shared/BgImageWrapper/BgImageWrapper";
@@ -24,6 +25,7 @@ const WelcomePage = () => {
               tracking and managing expenses, allowing for a stress-free mastery
               over your financial world.
             </Description>
+            <AuthNav />
           </div>
         </ContentWrapper>
         <BgImageWrapper />

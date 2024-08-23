@@ -6,7 +6,7 @@ import { persistor, store } from "./redux/store";
 import { PersistGate } from "redux-persist/integration/react";
 import "./index.css";
 import "./variable.css";
-import App from "./App";
+import App from "components/App";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <BrowserRouter basename="/Expence-trackerv3">

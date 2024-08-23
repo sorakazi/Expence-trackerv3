@@ -1,7 +1,6 @@
-import React from "react";
 import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
-import Logo from "../header/logo";
+import Logo from "../header/logo/Logo";
 import {
   StyledHeader,
   StyledContainer,
