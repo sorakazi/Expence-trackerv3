@@ -1,4 +1,5 @@
 import AuthNav from "../AuthNav/AuthNav";
+import AllUsersTab from "../AllUsersTab/AllUsersTab";
 import { Text } from "./WelcomePage.styled";
 import { StyledCommonWrapper } from "styles/Common.styled";
 import BgImageWrapper from "shared/BgImageWrapper/BgImageWrapper";
@@ -27,6 +28,7 @@ const WelcomePage = () => {
             </Description>
             <AuthNav />
           </div>
+          <AllUsersTab />
         </ContentWrapper>
         <BgImageWrapper />
       </PageWrapper>

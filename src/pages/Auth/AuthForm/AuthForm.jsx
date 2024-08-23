@@ -2,7 +2,7 @@ import { useState } from "react";
 import { useForm } from "react-hook-form";
 import PropTypes from "prop-types";
 import { yupResolver } from "@hookform/resolvers/yup";
-import { Eye, EyeOff, Error, Check } from "components/header/svgs";
+import { Eye, EyeOff, Error, Check } from "components/svgs/index";
 import {
   ErrorMessage,
   FormWrapper,

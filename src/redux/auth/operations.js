@@ -1,5 +1,5 @@
 import { createAsyncThunk } from "@reduxjs/toolkit";
-import { Error } from "components/header/svgs";
+import { Error } from "components/svgs";
 import { clearToken, instance, setToken } from "../../redux/fetchInstance";
 import { currentInfoUserThunk } from "../../redux/user/operations";
 

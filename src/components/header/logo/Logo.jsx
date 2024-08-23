@@ -2,7 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
 import { StyledLogo } from "./Logo.styled";
-import { LogoIcon } from "components/header/svgs";
+import { LogoIcon } from "components/svgs";
 
 const Logo = ({ isLoggedIn }) => {
   return (
