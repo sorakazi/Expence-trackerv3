@@ -1,13 +1,17 @@
-import React from "react";
+import { useSelector } from "react-redux";
 import { Routes, Route } from "react-router-dom";
 import Logo from "./components/header/logo/Logo"; // Update the path as necessary
 import WelcomePage from "pages/WelcomePage/WelcomePage";
-
+import PageNotFound from "pages/PageNotFound/PageNotFound";
+import PageLoader from "./components/PageLoader/PageLoader";
+import { selectIsRefreshing } from "./redux/auth/selectors";
 const App = () => {
   // Determine if the user is logged in
   const isLoggedIn = false; // Replace this with actual logic to determine login status
-
-  return (
+  const isRefreshing = useSelector(selectIsRefreshing);
+  return isRefreshing ? (
+    <PageLoader />
+  ) : (
     <div>
       <Routes>
         <Route
@@ -19,6 +23,7 @@ const App = () => {
             </>
           }
         />
+        <Route path="*" element={<PageNotFound />} />
       </Routes>
     </div>
   );
