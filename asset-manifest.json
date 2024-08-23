@@ -1,7 +1,8 @@
 {
   "files": {
-    "main.css": "/Expence-trackerv3/static/css/main.96888e55.css",
-    "main.js": "/Expence-trackerv3/static/js/main.496f5175.js",
+    "main.css": "/Expence-trackerv3/static/css/main.3351584c.css",
+    "main.js": "/Expence-trackerv3/static/js/main.b16cdfff.js",
+    "static/media/4044-page.png": "/Expence-trackerv3/static/media/4044-page.ea8edbd76f4b9c5f3360.png",
     "static/media/img-1_desk@2x.jpg": "/Expence-trackerv3/static/media/img-1_desk@2x.2a6784d6e404e8100441.jpg",
     "static/media/img-1_tab@2x.jpg": "/Expence-trackerv3/static/media/img-1_tab@2x.f38ba292d08cab3bc000.jpg",
     "static/media/img-1_mob@2x.jpg": "/Expence-trackerv3/static/media/img-1_mob@2x.3066ccd6304cbf223eec.jpg",
@@ -10,6 +11,10 @@
     "static/media/suisse-regular.ttf": "/Expence-trackerv3/static/media/suisse-regular.7ea99720633194a9e3c4.ttf",
     "static/media/suisse-bold.ttf": "/Expence-trackerv3/static/media/suisse-bold.6e9941f2a44c1939c4ef.ttf",
     "static/media/img-1_mob.jpg": "/Expence-trackerv3/static/media/img-1_mob.ae9caf391a2cac027c19.jpg",
+    "static/media/chart.png": "/Expence-trackerv3/static/media/chart.c990dd47a9800fce5a25.png",
+    "static/media/img-1_desk@2x.png": "/Expence-trackerv3/static/media/img-1_desk@2x.625b8c7b4d80d94aff42.png",
+    "static/media/img-3_desk@2x.png": "/Expence-trackerv3/static/media/img-3_desk@2x.397f7289159e86a57ce7.png",
+    "static/media/img-2_desk@2x.png": "/Expence-trackerv3/static/media/img-2_desk@2x.b753323b6111bab4680c.png",
     "static/media/user-avatar.svg": "/Expence-trackerv3/static/media/user-avatar.1613dd3554ca6503c85f76857c051807.svg",
     "static/media/logo-icon.svg": "/Expence-trackerv3/static/media/logo-icon.8b8db1ffdd21a19d53e9110740dfe2fa.svg",
     "static/media/eye-off.svg": "/Expence-trackerv3/static/media/eye-off.b1108d4c0804104e160eb5598364a812.svg",
@@ -33,11 +38,11 @@
     "static/media/menu.svg": "/Expence-trackerv3/static/media/menu.8c1d205856eaa5b6322f5eae4a3fbfa7.svg",
     "static/media/arrow-down_currency.svg": "/Expence-trackerv3/static/media/arrow-down_currency.2fb62ac77d027fa8acff4480dd1ae02a.svg",
     "static/media/arrow-up.svg": "/Expence-trackerv3/static/media/arrow-up.97dc0ed2b2fcdfd9de6cc3a4e8820713.svg",
-    "main.96888e55.css.map": "/Expence-trackerv3/static/css/main.96888e55.css.map",
-    "main.496f5175.js.map": "/Expence-trackerv3/static/js/main.496f5175.js.map"
+    "main.3351584c.css.map": "/Expence-trackerv3/static/css/main.3351584c.css.map",
+    "main.b16cdfff.js.map": "/Expence-trackerv3/static/js/main.b16cdfff.js.map"
   },
   "entrypoints": [
-    "static/css/main.96888e55.css",
-    "static/js/main.496f5175.js"
+    "static/css/main.3351584c.css",
+    "static/js/main.b16cdfff.js"
   ]
 }
