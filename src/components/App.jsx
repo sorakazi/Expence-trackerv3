@@ -6,7 +6,8 @@ import MainTransactionsProtectedRoute from "routes/MainTransactionsProtectedRout
 import PublicWelcomeRoute from "routes/PublicWelcomeRoute";
 import PublicLoginRoute from "routes/PublicLoginRoute";
 import PublicRegisterRoute from "routes/PublicRegisterRoute";
-import PageNotFound from "pages/Auth/PageNotFound/PageNotFound";
+import TransactionsHistoryProtectedRoute from "routes/TransactionsHistoryProtectedRoute";
+import PageNotFound from "pages/PageNotFound/PageNotFound";
 import { refreshThunk } from "../redux/auth/operations";
 import PageLoader from "./PageLoader/PageLoader";
 import { selectIsRefreshing } from "../redux/auth/selectors";
@@ -28,6 +29,11 @@ export const App = () => {
             path="transactions/:transactionsType"
             element={<MainTransactionsProtectedRoute />}
           />
+          <Route
+            path="/transactions/history/:transactionsType"
+            element={<TransactionsHistoryProtectedRoute />}
+          />
+
           <Route path="/" element={<PublicWelcomeRoute />} />
           <Route path="login" element={<PublicLoginRoute />} />
           <Route path="register" element={<PublicRegisterRoute />} />
@@ -37,5 +43,3 @@ export const App = () => {
     </div>
   );
 };
-
-export default App;

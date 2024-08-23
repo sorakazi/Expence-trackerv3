@@ -1,5 +1,9 @@
-import { Link } from "react-router-dom";
+import React, { useEffect, useState } from "react";
 import Logo from "../header/logo/Logo";
+import TransactionsHistoryNav from "./navBar/TransactionsHistoryNav";
+import UserBarBtn from "./userBar/UserBarBtn";
+import BurgerMenuBtn from "./burgerMenuBtn/BurgerMenuBtn";
+import UserPanel from "./userPanel/UserPanel";
 import { StyledCommonWrapper } from "styles/Common.styled";
 import {
   StyledHeader,
@@ -8,9 +12,19 @@ import {
 } from "./Header.styled";
 import { useSelector } from "react-redux";
 import { selectIsLoggedIn } from "../../redux/auth/selectors";
+import { useLocation } from "react-router-dom";
 
 const Header = () => {
+  const [isUserPanelOpen, setIsUserPanelOpen] = useState(false);
   const isLoggedIn = useSelector(selectIsLoggedIn);
+  const location = useLocation();
+
+  const toggleUserPanel = () => {
+    setIsUserPanelOpen(!isUserPanelOpen);
+  };
+  useEffect(() => {
+    setIsUserPanelOpen(false);
+  }, [location.pathname]);
 
   return (
     <StyledHeader>
@@ -18,13 +32,22 @@ const Header = () => {
         <StyledContainer className={isLoggedIn ? "auth-user" : ""}>
           <Logo isLoggedIn={isLoggedIn} />
           {isLoggedIn && (
-            <StyledContainerUserBtn>
-              <Link to="/logout">Logout</Link>
-            </StyledContainerUserBtn>
+            <>
+              <TransactionsHistoryNav />
+              <StyledContainerUserBtn>
+                <UserBarBtn
+                  toggleUserPanel={toggleUserPanel}
+                  isUserPanelOpen={isUserPanelOpen}
+                />
+                {isUserPanelOpen && <UserPanel />}
+              </StyledContainerUserBtn>
+              <BurgerMenuBtn />
+            </>
           )}
         </StyledContainer>
       </StyledCommonWrapper>
     </StyledHeader>
   );
 };
+
 export default Header;
