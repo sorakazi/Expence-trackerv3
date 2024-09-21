@@ -9,7 +9,7 @@ import "./variable.css";
 import { App } from "components/App";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
-  <BrowserRouter basename="/Expence-tracker">
+  <BrowserRouter basename="/Expence-trackerv3">
     <Provider store={store}>
       <PersistGate loading={null} persistor={persistor}>
         <App />
